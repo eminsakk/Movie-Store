@@ -55,7 +55,7 @@ class Movie::SecondaryKey
     const std::string title;
     const std::string director;
 
-  private: //cannot be reassigned, no implementation provided
+  private: 
     const SecondaryKey & operator=(const SecondaryKey &);
 
   friend std::ostream & operator<<(std::ostream &, const Movie::SecondaryKey &);
